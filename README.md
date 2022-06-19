@@ -4,7 +4,7 @@
 * [Select an environment and SDK](#LaunchDarkly-Basics)
 * [Select or create a flag](#Feature-Flag)
 * [Application](#application)
-* [Demo] (#demo)
+* [Demo](#demo)
 
 ## Select an environment and SDK
 
