@@ -103,6 +103,9 @@ if __name__ == '__main__':
 
 ```
 
+The end goal of this step is to test out the feature flags that you have implemented. If you need a step-by-step demo, please go straight to the demo section to visualize the sequence of steps in the video provided.
+
+
 Some important building blocks that I'd like to shed a light on: 
 
 To initialize the LD client with SDK key, you can do the following: 
@@ -124,5 +127,8 @@ To do that, you can insert the following code to close the LD client.
 ```
 ldclient.get().close()
 ```
+
+
+
 
 ## Demo
