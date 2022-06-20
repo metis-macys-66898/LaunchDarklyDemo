@@ -111,7 +111,7 @@ Some important building blocks that I'd like to shed a light on:
 To initialize the LD client with SDK key, you can do the following: 
 
 ```
-# plug in SDK-key below
+# plug in a SDK-key below
 ldclient.set_config(Config("[SDK-key]"))
 ```
 
