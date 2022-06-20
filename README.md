@@ -47,7 +47,7 @@ After you create a feature flag, you can just simply select it at the Connect an
 
 ## Application
 
-Now that you have completed the first 2 steps in the "Connect an SDK" screen, you can now find your SDK key in section 3. See the box below.
+Now that you have completed the first 2 steps in the "Connect an SDK" screen, you can now find your SDK key in section 3. See the purple box below.
 
 ![image](https://user-images.githubusercontent.com/30054892/174507121-cdd6e170-6c44-4463-9c25-20d9db7adea6.png)
 
@@ -101,6 +101,28 @@ def get_feature():
 if __name__ == '__main__':
     app.run(debug = True)    
 
+```
+
+Some important building blocks that I'd like to shed a light on: 
+
+To initialize the LD client with SDK key, you can do the following: 
+
+```
+# plug in SDK-key below
+ldclient.set_config(Config("[SDK-key]"))
+```
+
+Let's say if you have a feature flag with a string "launchTheme", you can call LaunchDarkly ( _ldclient.get().variation()_ )  with it to evaluate its value. 
+
+```
+ldclient.get().variation("launchTheme", user, False)
+```
+
+and you want to make sure SDK shuts down cleanly and has a chance to deliver analytics vents to LaunchDarkly before the program exits. Otherwise, the SDK would continue running and events would be delivered automatically in the background.
+
+To do that, you can insert the following code to close the LD client. 
+```
+ldclient.get().close()
 ```
 
 ## Demo
