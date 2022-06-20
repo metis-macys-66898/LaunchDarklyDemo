@@ -30,18 +30,21 @@ You can then select the proper environment and SDK.
 
 Now that you have a proper environment with a SDK selected. You would like to create (or select) a feature flag. 
 
-Follow the steps 1) Navigate to the Feature Falgs tab. 
+Follow the steps 
+
+1) Navigate to the Feature Falgs tab. 
 
 2) Click on Create Flag button to start building your flag. 
 
 ![image](https://user-images.githubusercontent.com/30054892/174506432-b873ed76-36f3-425a-a558-e625c7f7fdf2.png)
 
+Note: See the Demo video in the final section to understand on how to successfully configure a flag.
 
-See the Demo video in the final section to understand on how to successfully configure a flag.
+After you create a feature flag, you can just simply select it at the Connect an SDK screen, and you can click "save and continue"
+
+<img width="1043" alt="image" src="https://user-images.githubusercontent.com/30054892/174506971-004d3be8-f30c-425a-a62b-e029018e0f59.png">
 
 
-
-	
 ## Application
 
 ```
